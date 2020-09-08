@@ -1,6 +1,108 @@
 {% extends 'robotWriter/template.html' %}
 
 {% block content %}
-    <h4>Initial commit</h4>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 center-text">
+                        <h2>Settings</h2>
+                    </div>
+                </div>
+                <br>
+
+                <form action="" id="settingsForm">
+                    <div class="row center-text ">
+                        <div class="col-md-2">
+                            <i class="fas fa-lg fa-tachometer-alt"></i>
+                        </div>
+                        <div class="col-md-4">Baud rate</div>
+                        <div class="col-md-6">
+                            <select placeholder="Select Baud Rate" class="form-control" name="baudRateSelect"
+                                    id="baudRateSelect">
+                                <option value="" disabled selected>Select baud rate</option>
+                                <option value="9600">9600</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row center-text ">
+                        <div class="col-md-2">
+                            <i class="fas fa-lg fa-th"></i>
+                        </div>
+                        <div class="col-md-4">Start point</div>
+                        <div class="col-md-3">
+                            <input type="number" placeholder="Init row">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" placeholder="Init col">
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="row center-text ">
+                        <div class="col-md-2">
+                            <i class="fas fa-lg fa-project-diagram"></i>
+                        </div>
+                        <div class="col-md-4">Port</div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Set communication port">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row center-text">
+                        <div class="col-md-5 center-text">
+                            <button type="button" class="btn btn-outline-info btn-lg">
+                                <i class="fa fa-lg fa-check-circle"></i>
+                                Set up
+                            </button>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 3%">
+                            <h4>Or</h4>
+                        </div>
+                        <div class="col-md-5 center-text">
+                            <button type="button" class="btn btn-outline-danger btn-lg">
+                                <i class="fa fa-lg fa-sync-alt"></i>
+                                Reset
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </form>
+                <div class="row center-text">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <form action='javascript:void(0)'>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea placeholder="Type what you want me to write 📑"
+                                  id="textAreaInput" class="form-control" name="" id="" cols="40" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-outline-success btn-block">
+                            <i class="fas fa-3x fa-pen-fancy">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
 
 {% endblock %}

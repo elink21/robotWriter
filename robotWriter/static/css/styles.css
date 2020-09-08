@@ -1,0 +1,59 @@
+:root {
+    --primary-color:#00acc1;
+    --light-color:#5ddef4;
+    --dark-color:#007c91;
+    --background:#f5f5f6;
+    --contrast-background:#e1e2e1;
+}
+
+
+body{
+    background-color: var(--contrast-background);
+    font-family: 'Satisfy', cursive !important;
+}
+
+
+#upperBar{
+    background-color: var(--primary-color);
+    min-height: 100px;
+    height: 100px;
+    max-height: 100px;
+    padding: 2%;
+    color: var(--background);
+}
+
+textarea::placeholder, textarea:placeholder-shown{
+    font-size: 30px !important;
+}
+
+input, textarea,select{
+    font-family: 'Satisfy', cursive !important;
+}
+
+
+select{
+    text-align: center !important;
+}
+
+#textAreaInput{
+    display: block;
+    box-sizing: border-box;
+    padding-top: 20%;
+    text-align: center;
+    font-size: 35px;
+    max-height: 400px;
+    background-color: var(--contrast-background) !important;
+}
+
+button{
+    padding:10px !important;
+}
+
+#settingsForm{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.center-text{
+    text-align: center;
+}
